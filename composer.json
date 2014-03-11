@@ -11,9 +11,6 @@
             "homepage": "https://github.com/joshuairl/capistrano-cake-example/graphs/contributors"
         }
     ],
-    "config": {
-        "vendor-dir": "Vendor"
-    },
     "require": {
         "cakedc/migrations": "2.2.3"
     },
