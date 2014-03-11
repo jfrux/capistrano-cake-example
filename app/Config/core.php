@@ -31,7 +31,6 @@
  * In production mode, flash messages redirect after a time interval.
  * In development mode, you need to click the flash message to continue.
  */
-	require_once dirname(__DIR__) . '/Vendor/autoload.php';
 	Configure::write('debug', 2);
 
 /**
