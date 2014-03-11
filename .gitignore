@@ -1,4 +1,6 @@
 app/Vendor/*
 app/Plugin/*
+!app/Vendor/autoload.php
+!app/Vendor/composer
 app/composer.lock
 app/tmp/cache/persistent
