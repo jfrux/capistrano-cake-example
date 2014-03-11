@@ -18,7 +18,7 @@ set :deploy_to, "/home/#{fetch(:application)}/public_html/"
 # set :format, :pretty
 
 # Default value for :log_level is :debug
-set :log_level, :debug
+#set :log_level, :debug
 
 # Default value for :pty is false
 # set :pty, true
@@ -45,10 +45,10 @@ namespace :deploy do
     end
   end
 
-  after :publishing, :migrate
-  after :migrate, :composer_install
-  after :composer_install, :restart
-
+  after :publishing, :composer_install
+  after :composer_install, :migrate
+  after :migrate, :restart
+  
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:
