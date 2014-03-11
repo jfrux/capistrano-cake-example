@@ -12,7 +12,7 @@
         }
     ],
     "config": {
-        "vendor-dir": "app/Vendor/"
+        "vendor-dir": "Vendor"
     },
     "require": {
         "cakedc/migrations": "2.2.3"

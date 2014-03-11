@@ -1,2 +1,3 @@
 app/Vendor/*
-Plugin/*
+app/Plugin/*
+app/composer.lock
