@@ -9,7 +9,8 @@ set :repo_url, 'git@github.com:joshuairl/capistrano-cake-example.git'
 set :branch, :master
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, "/home/#{fetch(:application)}/public_html/"
-SSHKit.config.command_map[:composer] = "~/bin/composer"
+
+
 # Default value for :scm is :git
 # set :scm, :git
 
@@ -45,7 +46,7 @@ namespace :deploy do
   end
 
   after :publishing, :restart
-
+  
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:

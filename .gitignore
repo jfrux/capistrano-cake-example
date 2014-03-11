@@ -1,3 +1,4 @@
 app/Vendor/*
 app/Plugin/*
 app/composer.lock
+app/tmp/cache/persistent
